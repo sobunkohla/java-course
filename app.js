@@ -40,7 +40,7 @@ if ( cash2 >= price2 && !isStoreOpen) {
  console.log('print recipt')
 }
 
-let val = "falsey"
+let val = ""
  
 if (val) {
     console.log(val);
@@ -79,16 +79,51 @@ for (let i = 1; i <=100; i++ ) {
 for (let i = 1; i<= 20; i++) {
     
     if (i % 3 ===0 && i %5 ===0 ) {
-        console.log("frontend simplified")
+        console.log(`${i} -> frontend simplified`)
      }
    else if (i % 3 ===0) {
-        console.log("frontend")
+        console.log(`${i} -> frontend`)
     }
     else if (i %5 ===0) {
-        console.log("Simplified")
+        console.log(`${i} -> Simplified`)
     }
     else if (i % 3 !==0 || i %5 !==0) {
-        console.log(i)
+        console.log(`${i} -> ${i}`)
     }
+
+
     
 }
+
+const frontEnd = "Frontend Simplified";
+
+for(let i = 0; i < frontEnd.length; i++) {
+   console.log(`${i} -> ${frontEnd[i]}`);
+}
+//function definition
+function welcomePersonToFES(name, lastName) {
+    console.log(`Welcome to FES, ${name} ${lastName}`);
+}
+//function calling 
+welcomePersonToFES("sobza","Nkohla");
+
+function sumOfTwoNumbers(firstNum, secondNum) {
+    return firstNum / secondNum
+    
+}
+
+console.log(sumOfTwoNumbers(10, 10))
+
+//convert celsius to fahrenheit
+//first Way of calling a function
+function convertCelsiusToFahrenheit(celsius) {
+  return celsius * 1.8 + 32
+}
+console.log(convertCelsiusToFahrenheit(30))
+
+//second way of calling a function 
+const convertCelToFah = (celsius) => {
+   return celsius * 1.8 + 32
+}
+
+console.log(convertCelToFah(30))
