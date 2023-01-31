@@ -112,18 +112,56 @@ function sumOfTwoNumbers(firstNum, secondNum) {
     
 }
 
-console.log(sumOfTwoNumbers(10, 10))
+console.log(sumOfTwoNumbers(10, 10));
 
 //convert celsius to fahrenheit
 //first Way of calling a function
 function convertCelsiusToFahrenheit(celsius) {
-  return celsius * 1.8 + 32
+  return celsius * 1.8 + 32;
 }
-console.log(convertCelsiusToFahrenheit(30))
+console.log(convertCelsiusToFahrenheit(30));
 
 //second way of calling a function 
 const convertCelToFah = (celsius) => {
-   return celsius * 1.8 + 32
+   return celsius * 1.8 + 32;
 }
 
-console.log(convertCelToFah(30))
+console.log(convertCelToFah(30));
+
+
+let shoppingItemsPrice = [20,30,40,50,100] ;
+
+//first item of an array
+
+console.log(`first item -> ${shoppingItemsPrice[0]}`)
+
+//last item of an array
+
+console.log( `last item -> ${shoppingItemsPrice[shoppingItemsPrice.length-1]}`)
+
+//add element onto end of  array
+
+shoppingItemsPrice.push(200)
+
+console.log(shoppingItemsPrice)
+
+let newArr = shoppingItemsPrice.filter(element => element < 50 
+)
+
+console.log(newArr)
+
+
+let TestMarks = ["A+","A", "FAIL" ]
+//long way
+
+// let newTestMark = TestMarks.filter( (element) => {
+//  return element !== "FAIL"
+// })
+
+// console.log(newTestMark)
+
+//Short way 
+
+let newTestMark = TestMarks.filter( element => element !== "FAIL"  )
+
+console.log(newTestMark)
