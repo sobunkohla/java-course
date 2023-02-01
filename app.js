@@ -162,6 +162,28 @@ let TestMarks = ["A+","A", "FAIL" ]
 
 //Short way 
 
-let newTestMark = TestMarks.filter( element => element !== "FAIL"  )
+// let newTestMark = TestMarks.filter( element => element !== "FAIL"  )
 
-console.log(newTestMark)
+// console.log(newTestMark)
+let newTestMarks =[];
+for (let i = 0; i<TestMarks.length; i++) {
+    
+    if (TestMarks[i] !== "FAIL") {
+        
+        newTestMarks.push(TestMarks[i]);  
+    }
+
+}
+
+//array.map function
+console.log(newTestMarks)
+
+let arr = [1,16,20,50]
+
+let newArray = arr.map( element => undefined );
+
+console.log( newArray)
+
+
+
+
