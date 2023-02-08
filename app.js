@@ -241,3 +241,38 @@ register({
 });
 
 console.log(users);
+
+
+// first way of accessing an element
+console.log(document.querySelector('#title'))
+
+
+
+//second way of accessing an element 
+console.log(document.getElementById('title'))
+
+
+// change HTML 
+document.querySelector('#title').innerHTML = 'Frontend Simplified'
+
+
+// change CSS
+let title = document.querySelector('#title');
+
+
+
+function changeToRed() {
+
+    
+    title.style.color = 'blue';
+}
+
+function darktheme() {
+
+    document.body.classList.toggle('dark-theme');
+}
+
+document.querySelector('.btn').addEventListener('click',  darktheme,)
+
+
+
